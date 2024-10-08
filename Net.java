@@ -15,6 +15,7 @@ class Net {
     private double dw;
     private double out;
     private int correct = 0;
+    private String breaker = "----------------------------------------------------------------";
     
     public Net(List<Double[]> data) {
         this.data = data;
@@ -65,7 +66,7 @@ class Net {
             System.out.printf("%.1f x %.1f = %.1f --> %.1f x %.1f = %.1f%n",
                     input, Y.get(n), input * 2, input, weights.get(n), out);
         }
-        System.out.println("------------------------------------------------------------------------");
+        System.out.println(breaker.substring(0, breaker.length();
     }
     
     public void eval(List<Double> testData) {
